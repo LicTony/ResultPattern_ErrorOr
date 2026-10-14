@@ -2,4 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/ErrorOrPoc.Api/ErrorOrPoc.Api.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ErrorOrPoc.Tests/ErrorOrPoc.Tests.csproj" />
+  </Folder>
 </Solution>

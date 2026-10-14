@@ -22,10 +22,14 @@ Traditional exception-based control flow for domain validation and business erro
 - [x] `TASK-003`: Create Minimal API endpoints and HTTP ProblemDetails mapping extension (`ToProblemHttpResult`).
   - Route: inline
   - Checks: Endpoints map `ErrorOr<T>` cleanly to HTTP 200, 400, 404, 409 `ProblemDetails` (Observed: compiled cleanly with 0 warnings/errors).
-- [ ] `TASK-004`: Add automated unit/integration tests covering success and error paths.
+- [x] `TASK-004`: Add automated unit/integration tests covering success and error paths.
   - Route: inline
-  - Checks: `dotnet test` runs and passes green.
+  - Checks: `dotnet test` runs and passes green (Observed: 8 passed, 0 failed, 0 skipped).
 
 ## Progress & Verification Evidence
 - Branch: `feature/erroror-minimal-api-poc`
-- Commits: None yet.
+- Commits:
+  - `039e4b8`: `chore: initialize .net 10 solution and minimal api project with erroror`
+  - `eb995b4`: `feat(domain): implement user domain models, typed erroror errors, and service`
+  - `6f06e02`: `feat(api): implement minimal api endpoints and erroror to problemdetails mapping`
+  - Pending: `test(api): add tests for user service and erroror mapping`
