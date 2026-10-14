@@ -32,4 +32,4 @@ Traditional exception-based control flow for domain validation and business erro
   - `039e4b8`: `chore: initialize .net 10 solution and minimal api project with erroror`
   - `eb995b4`: `feat(domain): implement user domain models, typed erroror errors, and service`
   - `6f06e02`: `feat(api): implement minimal api endpoints and erroror to problemdetails mapping`
-  - Pending: `test(api): add tests for user service and erroror mapping`
+  - `5b56d4f`: `test(api): add unit tests for erroror domain logic and http mapping`
