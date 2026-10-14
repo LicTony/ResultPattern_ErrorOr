@@ -16,9 +16,9 @@ Traditional exception-based control flow for domain validation and business erro
 - [x] `TASK-001`: Initialize .NET 10 solution, Minimal API project (`src/ErrorOrPoc.Api`), and install `ErrorOr` package.
   - Route: inline
   - Checks: `dotnet build` passes on `net10.0` (Observed: 0 warnings, 0 errors).
-- [ ] `TASK-002`: Implement Domain models, typed domain errors, and a domain service returning `ErrorOr<User>`.
+- [x] `TASK-002`: Implement Domain models, typed domain errors, and a domain service returning `ErrorOr<User>`.
   - Route: inline
-  - Checks: Domain returns typed errors (`Validation`, `Conflict`, `NotFound`) and successful result.
+  - Checks: Domain returns typed errors (`Validation`, `Conflict`, `NotFound`) and successful result (Observed: compiled cleanly with 0 warnings/errors).
 - [ ] `TASK-003`: Create Minimal API endpoints and HTTP ProblemDetails mapping extension (`ToProblemHttpResult`).
   - Route: inline
   - Checks: Endpoints map `ErrorOr<T>` cleanly to HTTP 200, 400, 404, 409 `ProblemDetails`.
