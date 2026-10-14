@@ -19,9 +19,9 @@ Traditional exception-based control flow for domain validation and business erro
 - [x] `TASK-002`: Implement Domain models, typed domain errors, and a domain service returning `ErrorOr<User>`.
   - Route: inline
   - Checks: Domain returns typed errors (`Validation`, `Conflict`, `NotFound`) and successful result (Observed: compiled cleanly with 0 warnings/errors).
-- [ ] `TASK-003`: Create Minimal API endpoints and HTTP ProblemDetails mapping extension (`ToProblemHttpResult`).
+- [x] `TASK-003`: Create Minimal API endpoints and HTTP ProblemDetails mapping extension (`ToProblemHttpResult`).
   - Route: inline
-  - Checks: Endpoints map `ErrorOr<T>` cleanly to HTTP 200, 400, 404, 409 `ProblemDetails`.
+  - Checks: Endpoints map `ErrorOr<T>` cleanly to HTTP 200, 400, 404, 409 `ProblemDetails` (Observed: compiled cleanly with 0 warnings/errors).
 - [ ] `TASK-004`: Add automated unit/integration tests covering success and error paths.
   - Route: inline
   - Checks: `dotnet test` runs and passes green.
