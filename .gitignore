@@ -1,0 +1,11 @@
+# Local Pi runtime state
+.atl/
+
+# .NET artifacts
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.idea/
+.vscode/
